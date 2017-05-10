@@ -1,0 +1,355 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport">
+<link rel="shortcut icon" href="SITE_URL/favicon.ico">
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<link rel="apple-touch-icon" type="image/x-icon" href="/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link type="text/css" href="__CSS__/style.css" rel="stylesheet"/>
+</head>
+<style>
+*{margin:0;padding:0;}
+ul{ list-style:none;}
+img{ border:none;}
+
+.pingmian{
+	width: 1920px;
+	 height:870px;
+	margin: 0 auto;
+	border: 1px solid #ddd;
+	overflow: hidden;
+	position: relative;
+}
+.pingmian img{ width:100%; height:auto;}
+.suofang{ position:fixed; right:5%; top:45%; background:url(__IMG__/suofang.png) no-repeat center; width:29px; height:56px; border:1px solid #ddd; border-right:none; z-index:999;}
+.suofang .fangda , .suoxiao{ width:29px; height:28px;}
+.main{ width:1000px; height:100%;position:absolute;}
+#imgMain{
+	position: relative;
+	visibility: inherit;
+}
+
+</style>
+
+    <a href="{:U('sandtu')}"><div class="fanhui"><div class="fanhui_box"></div></div></a>
+
+
+		<a href="{:U('login_index')}"><div class="shouye"><div class="shouye_box"></div></div></a>
+	
+        <div class="suofang">
+	<div class="fangda" onClick="suofang(1)"></div>
+    <div class="suoxiao" onClick="suofang(2)"></div>
+	</div>
+    <div style="clear:both;"></div>
+	<div class="pingmian">
+		<img src="__IMG__/123456.jpg" usemap="#Map2" class="resize-image">
+        <map name="Map2" id="aaa">
+          <area shape="poly" coords="1103,320,1108,311,1166,320,1152,349,1093,339" href="{:U('content?id=111')}">
+          <area shape="poly" coords="1595,766,1582,798,1644,807,1656,775" href="{:U('content?id=4')}">
+          <area shape="poly" coords="1612,724,1600,755,1660,762,1672,732" href="{:U('content?id=5')}">
+          <area shape="poly" coords="1626,690,1613,723,1673,731,1686,698" href="{:U('content?id=6')}">
+          <area shape="poly" coords="1641,650,1630,679,1662,685,1673,654" href="{:U('content?id=7')}">
+          <area shape="poly" coords="1686,620,1675,651,1702,656,1715,626" href="{:U('content?id=8')}">
+          <area shape="poly" coords="1672,572,1659,603,1720,615,1731,581" href="{:U('content?id=9')}">
+          <area shape="poly" coords="1684,542,1672,572,1732,581,1744,549" href="{:U('content?id=10')}">
+          <area shape="poly" coords="1732,439,1718,471,1779,479,1792,447" href="{:U('content?id=11')}">
+          <area shape="poly" coords="1748,401,1735,433,1795,441,1806,411" href="{:U('content?id=12')}">
+          <area shape="poly" coords="1623,533,1611,564,1671,573,1682,542" href="{:U('content?id=13')}">
+          <area shape="poly" coords="1612,565,1599,598,1659,605,1671,574" href="{:U('content?id=14')}">
+          <area shape="poly" coords="1567,685,1552,717,1612,723,1625,690" href="{:U('content?id=16')}">
+          <area shape="poly" coords="1553,718,1541,747,1600,755,1611,724" href="{:U('content?id=17')}">
+          <area shape="poly" coords="1537,759,1524,790,1582,798,1594,767" href="{:U('content?id=18')}">
+          <area shape="poly" coords="1455,748,1442,780,1523,790,1536,760" href="{:U('content?id=19')}">
+          <area shape="poly" coords="1494,709,1480,739,1540,747,1552,717" href="{:U('content?id=20')}">
+          <area shape="poly" coords="1506,676,1494,708,1552,717,1567,684" href="{:U('content?id=21')}">
+          <area shape="poly" coords="1522,633,1512,664,1571,672,1583,641" href="{:U('content?id=22')}">
+          <area shape="poly" coords="1533,605,1524,633,1584,640,1594,609,1533,605,1532,605" href="{:U('content?id=23')}">
+          <area shape="poly" coords="1553,560,1541,588,1599,597,1611,565" href="{:U('content?id=24')}">
+          <area shape="poly" coords="1566,526,1554,557,1611,564,1622,533" href="{:U('content?id=25')}">
+          <area shape="poly" coords="1507,520,1492,551,1552,559,1563,526" href="{:U('content?id=26')}">
+          <area shape="poly" coords="1493,552,1481,582,1539,589,1551,561" href="{:U('content?id=27')}">
+          <area shape="poly" coords="1476,593,1464,625,1523,633,1535,602" href="{:U('content?id=28')}">
+          <area shape="poly" coords="1463,625,1452,657,1511,665,1523,634" href="{:U('content?id=29')}">
+          <area shape="poly" coords="1447,670,1433,700,1494,708,1505,679" href="{:U('content?id=30')}">
+          <area shape="poly" coords="1434,701,1423,734,1479,739,1493,709" href="{:U('content?id=31')}">
+          <area shape="poly" coords="1417,745,1405,773,1442,780,1453,750" href="{:U('content?id=32')}">
+          <area shape="poly" coords="1359,736,1347,767,1404,775,1418,744" href="{:U('content?id=33')}">
+          <area shape="poly" coords="1376,693,1363,725,1422,732,1434,699" href="{:U('content?id=34')}">
+          <area shape="poly" coords="1387,664,1377,693,1434,698,1446,671" href="{:U('content?id=35')}">
+          <area shape="poly" coords="1405,619,1394,651,1453,657,1463,626" href="{:U('content?id=36')}">
+          <area shape="poly" coords="1417,587,1404,617,1462,625,1476,594" href="{:U('content?id=37')}">
+          <area shape="poly" coords="1433,542,1421,575,1483,582,1492,552" href="{:U('content?id=38')}">
+          <area shape="poly" coords="1446,511,1433,542,1491,550,1505,519" href="{:U('content?id=39')}">
+          <area shape="poly" coords="1463,472,1452,499,1510,506,1522,477,1469,469" href="{:U('content?id=40')}">
+          <area shape="poly" coords="1483,437,1468,469,1528,475,1539,445" href="{:U('content?id=41')}">
+          <area shape="poly" coords="1509,361,1496,393,1556,400,1569,369" href="{:U('content?id=42')}">
+          <area shape="poly" coords="1536,319,1523,349,1579,359,1593,329" href="{:U('content?id=43')}">
+          <area shape="poly" coords="1450,353,1435,387,1496,393,1509,362" href="{:U('content?id=44')}">
+          <area shape="poly" coords="1436,387,1424,417,1485,425,1497,394" href="{:U('content?id=45')}">
+          <area shape="poly" coords="1420,429,1403,465,1464,472,1482,437" href="{:U('content?id=46')}">
+          <area shape="poly" coords="1404,465,1392,493,1453,500,1463,472" href="{:U('content?id=47')}">
+          <area shape="poly" coords="1387,502,1374,536,1434,542,1445,513" href="{:U('content?id=48')}">
+          <area shape="poly" coords="1375,538,1362,567,1421,575,1434,542" href="{:U('content?id=49')}">
+          <area shape="poly" coords="1358,577,1345,610,1406,618,1416,586" href="{:U('content?id=50')}">
+          <area shape="poly" coords="1345,611,1330,642,1393,649,1406,619" href="{:U('content?id=51')}">
+          <area shape="poly" coords="1329,654,1317,686,1377,693,1387,664" href="{:U('content?id=52')}">
+          <area shape="poly" coords="1316,687,1302,718,1362,725,1376,693" href="{:U('content?id=53')}">
+          <area shape="poly" coords="1300,727,1287,760,1348,767,1360,737" href="{:U('content?id=54')}">
+          <area shape="poly" coords="1361,214,1346,246,1398,254,1415,220" href="{:U('content?id=67')}">
+          <area shape="poly" coords="1361,298,1347,328,1408,336,1422,304" href="{:U('content?id=66')}">
+          <area shape="poly" coords="1301,289,1288,320,1348,328,1360,296" href="{:U('content?id=69')}">
+          <area shape="poly" coords="1345,339,1328,371,1390,380,1403,346" href="{:U('content?id=65')}">
+          <area shape="poly" coords="1282,333,1270,364,1330,371,1345,340" href="{:U('content?id=70')}">
+          <area shape="poly" coords="1240,282,1230,312,1277,317,1292,283" href="{:U('content?id=90')}">
+          <area shape="poly" coords="1181,275,1170,303,1228,312,1240,283" href="{:U('content?id=91')}">
+          <area shape="poly" coords="1112,299,1123,264,1182,273,1171,304" href="{:U('content?id=112')}">
+          <area shape="poly" coords="1225,324,1214,356,1271,363,1281,332" href="{:U('content?id=89')}">
+          <area shape="poly" coords="1168,320,1155,348,1210,355,1223,325" href="{:U('content?id=92')}">
+          <area shape="poly" coords="1094,342,1083,372,1140,380,1151,350" href="{:U('content?id=110')}">
+          <area shape="poly" coords="1153,350,1142,379,1200,388,1213,357" href="{:U('content?id=93')}">
+          <area shape="poly" coords="1215,357,1201,388,1257,396,1271,364" href="{:U('content?id=88')}">
+          <area shape="poly" coords="1273,365,1259,396,1319,403,1331,372" href="{:U('content?id=252')}">
+          <area shape="poly" coords="1332,373,1319,404,1377,411,1390,382" href="{:U('content?id=64')}">
+          <area shape="poly" coords="1314,416,1301,445,1361,453,1373,423" href="{:U('content?id=63')}">
+          <area shape="poly" coords="1255,407,1241,438,1302,446,1313,416" href="{:U('content?id=71')}">
+          <area shape="poly" coords="1196,400,1182,433,1242,440,1255,410" href="{:U('content?id=87')}">
+          <area shape="poly" coords="1137,392,1125,425,1184,428,1194,401" href="{:U('content?id=94')}">
+          <area shape="poly" coords="1281,444,1267,475,1320,481,1331,451" href="{:U('content?id=62')}">
+          <area shape="poly" coords="1284,490,1269,521,1330,530,1344,499" href="{:U('content?id=62')}">
+          <area shape="poly" coords="1270,523,1258,553,1319,563,1330,532" href="{:U('content?id=60')}">
+          <area shape="poly" coords="1240,439,1229,470,1267,475,1279,445" href="{:U('content?id=263')}">
+          <area shape="poly" coords="1181,433,1168,462,1231,470,1240,439" href="{:U('content?id=86')}">
+          <area shape="poly" coords="1124,425,1113,455,1168,462,1183,432" href="{:U('content?id=95')}">
+          <area shape="poly" coords="1107,468,1093,500,1153,507,1167,476" href="{:U('content?id=95')}">
+          <area shape="poly" coords="1168,477,1155,507,1212,515,1225,481" href="{:U('content?id=85')}">
+          <area shape="poly" coords="1226,482,1213,514,1271,521,1286,489" href="{:U('content?id=72')}">
+          <area shape="poly" coords="1093,501,1083,530,1141,539,1153,508" href="{:U('content?id=97')}">
+          <area shape="poly" coords="1155,509,1142,538,1199,546,1211,516" href="{:U('content?id=84')}">
+          <area shape="poly" coords="1213,516,1200,546,1258,553,1271,524" href="{:U('content?id=73')}">
+          <area shape="poly" coords="1047,461,1034,491,1092,499,1104,467" href="{:U('content?id=108')}">
+          <area shape="poly" coords="1034,492,1023,523,1082,531,1091,502" href="{:U('content?id=107')}">
+          <area shape="poly" coords="987,455,975,483,1032,490,1046,462" href="{:U('content?id=117')}">
+          <area shape="poly" coords="975,483,962,515,1022,523,1034,491" href="{:U('content?id=118')}">
+          <area shape="poly" coords="1251,564,1237,597,1299,603,1310,571" href="{:U('content?id=59')}">
+          <area shape="poly" coords="1192,557,1179,590,1236,597,1250,564" href="{:U('content?id=74')}">
+          <area shape="poly" coords="1238,599,1224,627,1287,637,1300,605" href="{:U('content?id=58')}">
+          <area shape="poly" coords="1180,591,1168,622,1226,628,1238,598" href="{:U('content?id=75')}">
+          <area shape="poly" coords="1121,583,1107,612,1169,620,1179,589" href="{:U('content?id=82')}">
+          <area shape="poly" coords="1145,554,1137,583,1180,588,1189,561" href="{:U('content?id=83')}">
+          <area shape="poly" coords="1074,543,1062,574,1109,579,1118,552" href="{:U('content?id=98')}">
+          <area shape="poly" coords="1015,535,1002,563,1062,571,1073,541" href="{:U('content?id=106')}">
+          <area shape="poly" coords="958,527,943,558,1004,564,1013,536" href="{:U('content?id=119')}">
+          <area shape="poly" coords="898,519,887,550,942,558,958,528" href="{:U('content?id=127')}">
+          <area shape="poly" coords="841,511,828,543,887,552,898,519" href="{:U('content?id=142')}">
+          <area shape="poly" coords="930,445,916,476,974,482,988,455" href="{:U('content?id=129')}">
+          <area shape="poly" coords="917,477,906,506,963,515,976,485" href="{:U('content?id=128')}">
+          <area shape="poly" coords="870,436,856,469,917,474,930,444" href="{:U('content?id=140')}">
+          <area shape="poly" coords="856,469,845,499,906,507,916,475" href="{:U('content?id=141')}">
+          <area shape="poly" coords="829,544,814,575,874,580,886,551" href="{:U('content?id=143')}">
+          <area shape="poly" coords="887,553,874,582,931,590,946,560" href="{:U('content?id=126')}">
+          <area shape="poly" coords="986,563,973,592,998,597,1011,568" href="{:U('content?id=262')}">
+          <area shape="poly" coords="1028,569,1014,600,1050,605,1061,574" href="{:U('content?id=105')}">
+          <area shape="poly" coords="1064,574,1054,603,1110,611,1120,582" href="{:U('content?id=99')}">
+          <area shape="poly" coords="1222,640,1208,672,1270,680,1283,648" href="{:U('content?id=57')}">
+          <area shape="poly" coords="1167,631,1154,660,1211,671,1222,640" href="{:U('content?id=76')}">
+          <area shape="poly" coords="1106,623,1093,654,1153,663,1165,632" href="{:U('content?id=81')}">
+          <area shape="poly" coords="1046,617,1033,645,1093,655,1104,624" href="{:U('content?id=100')}">
+          <area shape="poly" coords="986,608,974,640,1026,647,1039,615" href="{:U('content?id=104')}">
+          <area shape="poly" coords="869,593,856,625,915,633,927,601" href="{:U('content?id=125')}">
+          <area shape="poly" coords="856,626,843,657,901,665,916,633" href="{:U('content?id=124')}">
+          <area shape="poly" coords="917,634,902,665,962,672,973,641" href="{:U('content?id=261')}">
+          <area shape="poly" coords="974,641,964,671,1047,680,1062,650" href="{:U('content?id=260')}">
+          <area shape="poly" coords="1060,653,1047,683,1132,692,1142,664" href="{:U('content?id=80')}">
+          <area shape="poly" coords="1164,667,1151,696,1207,704,1215,674" href="{:U('content?id=77')}">
+          <area shape="poly" coords="1216,675,1207,705,1259,711,1269,681" href="{:U('content?id=56')}">
+          <area shape="poly" coords="1193,715,1181,743,1242,749,1252,723" href="{:U('content?id=55')}">
+          <area shape="poly" coords="1146,709,1133,741,1180,747,1192,715" href="{:U('content?id=78')}">
+          <area shape="poly" coords="1078,699,1064,731,1133,739,1146,708" href="{:U('content?id=79')}">
+          <area shape="poly" coords="1016,690,1005,723,1065,732,1078,700" href="{:U('content?id=102')}">
+          <area shape="poly" coords="956,684,945,715,1005,722,1015,691" href="{:U('content?id=103')}">
+          <area shape="poly" coords="898,676,886,708,946,715,956,685" href="{:U('content?id=122')}">
+          <area shape="poly" coords="839,670,827,700,886,708,898,675" href="{:U('content?id=123')}">
+          <area shape="poly" coords="781,662,768,693,827,702,838,668" href="{:U('content?id=146')}">
+          <area shape="poly" coords="811,587,798,618,857,625,868,594" href="{:U('content?id=144')}">
+          <area shape="poly" coords="798,620,784,651,845,658,855,626" href="{:U('content?id=145')}">
+          <area shape="poly" coords="1065,259,1052,290,1110,299,1125,265" href="{:U('content?id=251')}">
+          <area shape="poly" coords="1006,250,992,283,1034,290,1048,257" href="{:U('content?id=134')}">
+          <area shape="poly" coords="947,243,933,277,992,284,1005,252" href="{:U('content?id=135')}">
+          <area shape="poly" coords="930,287,916,320,978,326,989,296" href="{:U('content?id=136')}">
+          <area shape="poly" coords="990,294,980,327,1037,334,1051,299" href="{:U('content?id=133')}">
+          <area shape="poly" coords="1049,302,1037,335,1095,341,1108,308" href="{:U('content?id=113')}">
+          <area shape="poly" coords="917,319,904,350,963,359,978,324" href="{:U('content?id=137')}">
+          <area shape="poly" coords="979,325,964,359,1022,365,1034,332" href="{:U('content?id=132')}">
+          <area shape="poly" coords="1035,335,1023,364,1084,371,1094,343" href="{:U('content?id=114')}">
+          <area shape="poly" coords="899,363,887,394,946,401,957,370" href="{:U('content?id=138')}">
+          <area shape="poly" coords="958,371,946,402,1007,410,1019,379" href="{:U('content?id=131')}">
+          <area shape="poly" coords="886,394,875,426,933,433,946,403" href="{:U('content?id=139')}">
+          <area shape="poly" coords="948,402,935,434,991,442,1006,410" href="{:U('content?id=130')}">
+          <area shape="poly" coords="1019,381,1010,411,1044,416,1055,385" href="{:U('content?id=115')}">
+          <area shape="poly" coords="1008,412,993,443,1030,446,1041,419" href="{:U('content?id=116')}">
+          <area shape="poly" coords="1070,392,1047,446,1113,455,1138,392" href="{:U('content?id=109')}">
+          <area shape="poly" coords="660,205,646,238,708,245,720,213" href="{:U('content?id=185')}">
+          <area shape="poly" coords="720,213,707,246,767,254,778,222" href="{:U('content?id=184')}">
+          <area shape="poly" coords="780,222,767,254,807,261,819,227" href="{:U('content?id=161')}">
+          <area shape="poly" coords="840,229,828,261,886,269,896,236" href="{:U('content?id=159')}">
+          <area shape="poly" coords="832,211,823,228,899,236,903,221" href="{:U('content?id=160')}">
+          <area shape="poly" coords="822,273,811,304,868,312,881,279" href="{:U('content?id=158')}">
+          <area shape="poly" coords="644,248,631,281,689,287,702,257" href="{:U('content?id=186')}">
+          <area shape="poly" coords="704,256,690,290,750,296,761,264" href="{:U('content?id=183')}">
+          <area shape="poly" coords="762,265,750,296,811,304,821,273" href="{:U('content?id=#')}">
+          <area shape="poly" coords="631,281,618,313,677,320,690,290" href="{:U('content?id=187')}">
+          <area shape="poly" coords="691,288,678,322,737,329,751,297" href="{:U('content?id=182')}">
+          <area shape="poly" coords="750,296,738,330,797,338,809,304" href="{:U('content?id=162')}">
+          <area shape="poly" coords="810,304,796,339,855,344,867,313" href="{:U('content?id=157')}">
+          <area shape="poly" coords="616,321,602,355,656,364,673,331" href="{:U('content?id=188')}">
+          <area shape="poly" coords="601,354,593,377,647,382,655,363" href="{:U('content?id=189')}">
+          <area shape="poly" coords="595,377,588,391,641,397,647,384" href="{:U('content?id=264')}">
+          <area shape="poly" coords="674,332,661,364,700,369,715,339" href="{:U('content?id=181')}">
+          <area shape="poly" coords="671,373,662,398,704,402,714,371,675,367" href="{:U('content?id=180')}">
+          <area shape="poly" coords="733,339,727,360,746,374,779,378,791,344" href="{:U('content?id=163')}">
+          <area shape="poly" coords="792,347,779,380,839,387,852,354" href="{:U('content?id=156')}">
+          <area shape="poly" coords="738,373,724,406,783,412,797,381" href="{:U('content?id=164')}">
+          <area shape="poly" coords="796,383,782,414,825,419,839,387" href="{:U('content?id=155')}">
+          <area shape="poly" coords="585,400,570,433,630,438,642,405" href="{:U('content?id=190')}">
+          <area shape="poly" coords="643,406,630,439,689,447,702,415" href="{:U('content?id=179')}">
+          <area shape="poly" coords="703,415,690,446,747,454,761,422" href="{:U('content?id=165')}">
+          <area shape="poly" coords="760,422,751,455,807,462,822,430" href="{:U('content?id=154')}">
+          <area shape="poly" coords="571,433,558,463,618,470,629,440" href="{:U('content?id=191')}">
+          <area shape="poly" coords="630,440,620,469,679,478,689,448" href="{:U('content?id=178')}">
+          <area shape="poly" coords="689,447,680,476,735,487,748,455" href="{:U('content?id=166')}">
+          <area shape="poly" coords="748,455,738,486,795,493,807,465" href="{:U('content?id=153')}">
+          <area shape="poly" coords="555,475,542,505,601,512,612,482" href="{:U('content?id=192')}">
+          <area shape="poly" coords="613,481,601,515,659,521,671,490" href="{:U('content?id=177')}">
+          <area shape="poly" coords="672,490,660,520,720,529,732,496" href="{:U('content?id=167')}">
+          <area shape="poly" coords="732,497,720,529,780,537,791,505" href="{:U('content?id=152')}">
+          <area shape="poly" coords="542,505,529,538,586,546,601,512" href="{:U('content?id=193')}">
+          <area shape="poly" coords="601,514,587,546,645,553,659,521" href="{:U('content?id=176')}">
+          <area shape="poly" coords="659,521,647,551,707,561,718,529" href="{:U('content?id=168')}">
+          <area shape="poly" coords="718,530,707,562,766,569,778,538" href="{:U('content?id=151')}">
+          <area shape="poly" coords="524,548,509,583,570,589,583,556" href="{:U('content?id=194')}">
+          <area shape="poly" coords="583,557,570,588,629,596,641,565" href="{:U('content?id=175')}">
+          <area shape="poly" coords="642,565,628,598,659,600,671,570" href="{:U('content?id=169')}">
+          <area shape="poly" coords="702,573,687,605,748,613,759,580" href="{:U('content?id=150')}">
+          <area shape="poly" coords="689,605,676,635,734,644,748,614" href="{:U('content?id=149')}">
+          <area shape="poly" coords="628,597,616,628,651,633,663,602" href="{:U('content?id=170')}">
+          <area shape="poly" coords="570,590,556,622,614,628,628,596" href="{:U('content?id=174')}">
+          <area shape="poly" coords="510,584,499,610,556,621,569,591" href="{:U('content?id=195')}">
+          <area shape="poly" coords="493,625,480,657,542,663,554,631" href="{:U('content?id=250')}">
+          <area shape="poly" coords="553,632,542,663,599,671,611,638" href="{:U('content?id=173')}">
+          <area shape="poly" coords="612,639,598,671,658,679,671,647" href="{:U('content?id=171')}">
+          <area shape="poly" coords="671,647,659,680,718,687,732,654" href="{:U('content?id=148')}">
+          <area shape="poly" coords="583,705,563,753,625,761,644,712" href="{:U('content?id=172')}">
+          <area shape="poly" coords="760,730,733,801,772,807,795,742" href="{:U('content?id=147')}">
+          <area shape="poly" coords="755,805,747,829,786,833,791,817" href="{:U('content?id=#')}">
+          <area shape="poly" coords="555,190,540,221,601,230,613,199" href="{:U('content?id=209')}">
+          <area shape="poly" coords="495,182,479,215,540,222,554,189" href="{:U('content?id=210')}">
+          <area shape="poly" coords="452,175,434,208,481,215,494,183" href="{:U('content?id=265')}">
+          <area shape="poly" coords="350,207,334,240,459,256,472,225" href="{:U('content?id=231')}">
+          <area shape="poly" coords="477,225,465,258,523,265,535,233" href="{:U('content?id=211')}">
+          <area shape="poly" coords="535,233,524,266,583,274,593,242" href="{:U('content?id=208')}">
+          <area shape="poly" coords="403,251,390,280,452,290,465,257" href="{:U('content?id=230')}">
+          <area shape="poly" coords="466,258,453,290,514,299,524,268" href="{:U('content?id=212')}">
+          <area shape="poly" coords="524,268,514,298,570,306,582,276" href="{:U('content?id=207')}">
+          <area shape="poly" coords="349,284,334,313,396,325,409,295" href="{:U('content?id=232')}">
+          <area shape="poly" coords="537,314,524,346,552,349,564,318" href="{:U('content?id=206')}">
+          <area shape="poly" coords="445,332,430,362,483,367,494,341" href="{:U('content?id=214')}">
+          <area shape="poly" coords="493,341,484,366,516,372,524,344" href="{:U('content?id=205')}">
+          <area shape="poly" coords="367,357,352,390,415,399,426,365" href="{:U('content?id=228')}">
+          <area shape="poly" coords="429,367,418,399,476,405,486,376" href="{:U('content?id=215')}">
+          <area shape="poly" coords="487,376,477,405,525,411,535,382" href="{:U('content?id=204')}">
+          <area shape="poly" coords="343,402,330,433,390,441,404,409" href="{:U('content?id=227')}">
+          <area shape="poly" coords="405,410,391,440,452,449,460,416" href="{:U('content?id=216')}">
+          <area shape="poly" coords="462,417,453,449,509,457,522,424" href="{:U('content?id=203')}">
+          <area shape="poly" coords="389,452,375,484,434,493,447,460" href="{:U('content?id=217')}">
+          <area shape="poly" coords="448,461,435,492,493,500,506,468" href="{:U('content?id=202')}">
+          <area shape="poly" coords="163,536,151,564,210,575,220,543" href="{:U('content?id=243')}">
+          <area shape="poly" coords="223,544,211,574,268,584,283,552" href="{:U('content?id=233')}">
+          <area shape="poly" coords="284,551,268,584,331,591,344,558" href="{:U('content?id=226')}">
+          <area shape="poly" coords="345,559,332,590,389,599,404,566" href="{:U('content?id=218')}">
+          <area shape="poly" coords="405,569,388,601,450,606,462,574" href="{:U('content?id=#')}">
+          <area shape="poly" coords="101,575,86,608,129,613,143,580" href="{:U('content?id=244')}">
+          <area shape="poly" coords="141,581,128,614,190,622,202,588" href="{:U('content?id=242')}">
+          <area shape="poly" coords="205,584,190,621,245,627,261,592" href="{:U('content?id=234')}">
+          <area shape="poly" coords="260,596,247,632,299,641,314,606" href="{:U('content?id=229')}">
+          <area shape="poly" coords="315,606,301,642,352,648,367,614" href="{:U('content?id=219')}">
+          <area shape="poly" coords="368,617,353,650,408,654,421,621" href="{:U('content?id=200')}">
+          <area shape="poly" coords="140,640,124,670,171,676,182,646" href="{:U('content?id=241')}">
+          <area shape="poly" coords="179,649,171,678,224,684,235,653" href="{:U('content?id=235')}">
+          <area shape="poly" coords="238,652,224,684,277,691,292,658" href="{:U('content?id=224')}">
+          <area shape="poly" coords="84,664,70,698,149,707,161,677" href="{:U('content?id=240')}">
+          <area shape="poly" coords="70,699,62,721,106,726,115,704" href="{:U('content?id=239')}">
+          <area shape="poly" coords="62,723,52,747,92,751,103,727" href="{:U('content?id=238')}">
+          <area shape="poly" coords="50,762,33,799,117,810,133,772" href="{:U('content?id=237')}">
+          <area shape="poly" coords="163,675,157,695,213,703,222,683" href="{:U('content?id=236')}">
+          <area shape="poly" coords="151,700,128,756,204,764,224,713" href="{:U('content?id=245')}">
+          <area shape="poly" coords="194,782,179,817,236,827,253,790" href="{:U('content?id=222')}">
+          <area shape="poly" coords="254,790,236,827,296,836,311,797" href="{:U('content?id=221')}">
+          <area shape="poly" coords="374,808,359,847,296,837,310,797" href="{:U('content?id=196')}">
+          <area shape="poly" coords="329,763,320,783,349,782,357,763" href="{:U('content?id=197')}">
+          <area shape="poly" coords="222,720,202,769,236,773,256,722" href="{:U('content?id=223')}">
+          <area shape="poly" coords="293,660,269,718,340,730,364,671" href="{:U('content?id=220')}">
+          <area shape="poly" coords="366,671,352,702,403,709,418,676" href="{:U('content?id=199')}">
+          <area shape="poly" coords="352,704,340,732,392,736,402,710" href="{:U('content?id=198')}">
+          <area shape="poly" coords="1436,178,1419,213,1366,205,1381,173" href="{:U('content?id=#')}">
+          <area shape="poly" coords="405,309,385,358,428,365,441,334" href="{:U('content?id=229')}">
+          <area shape="poly" coords="451,299,436,327,467,335,477,308" href="{:U('content?id=213')}">
+          <area shape="poly" coords="331,757,342,737,368,736,359,760" href="{:U('content?id=247')}">
+        </map>
+	</div>
+
+
+<script type="text/javascript" src="__JS__/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="__JS__/component.js"></script>
+
+<script>
+	var arr = [];
+	var zuobiao = document.getElementById("aaa").getElementsByTagName("area");
+
+	function suofang(type){
+		var img = $('.resize-image');
+		var new_w,new_h;
+		var width = img.width();
+		var height = img.height();
+		if(type == 1){
+			new_w = width * 1.5;
+			new_h = height * 1.5;
+		}else{
+			new_w = width / 1.5;
+			new_h = height / 1.5;
+		}
+		if(new_w  > 4500){
+			alert("已经是最大了");
+			return false;
+		}
+		if(new_w < 1000){
+			alert("不能继续缩小了");
+			return false;
+		}
+		for(var i=0;i<zuobiao.length;i++){
+		  arr[i] = new Array();
+		  arr[i] = zuobiao[i]['coords'].split(",");
+		  
+		}
+		for(var i=0;i<arr.length;i++){
+			for(var j=0;j<arr[i].length;j++){
+				if(type == 1){
+					arr[i][j] = parseInt(arr[i][j]*1.5);	
+				}else{
+					arr[i][j] = parseInt(arr[i][j]/1.5);	
+				}
+		
+			}
+		
+		}
+		for(var i=0;i<arr.length;i++){
+		  zuobiao[i]['coords'] = arr[i];
+		}
+		img.animate({width: new_w, height: new_h}, 1000); 
+	}
+</script>
+</body>
+</html>
